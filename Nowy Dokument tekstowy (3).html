@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Багатоколонковий Макет</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f9f9f9; /* Світліший фон */
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            border: 2px solid #444; /* Темніша рамка */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff; /* Білий фон для контейнера */
+            border-radius: 8px; /* Закруглені краї */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легке затемнення */
+        }
+        .column-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px; /* Збільшено відстань між колонками */
+            margin-bottom: 20px;
+        }
+        .column {
+            background-color: #e9ecef; /* Світло-сірий фон для колонок */
+            padding: 20px; /* Збільшено внутрішній відступ */
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            text-align: left; /* Ліве вирівнювання тексту */
+            border-radius: 4px; /* Закруглені краї колонок */
+        }
+        /* Стилі для макета */
+        .one-column .column {
+            width: 100%;
+        }
+        .two-column .column {
+            width: 45%; /* Зменшено ширину колонок */
+        }
+        .three-column .column {
+            width: 28%; /* Зменшено ширину колонок */
+        }
+        .four-column .column {
+            width: 21%; /* Зменшено ширину колонок */
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none; /* Без підкреслення */
+            color: #007bff; /* Синій колір посилання */
+            font-weight: bold; /* Жирний текст */
+        }
+        a:hover {
+            text-decoration: underline; /* Підкреслення при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column-layout one-column">
+            <div class="column">Цей текст описує загальний макет. Тут ви можете дізнатися про структуру та стиль.</div>
+        </div>
+        
+        <div class="column-layout two-column">
+            <div class="column">Перше речення: вивчення нових концепцій.</div>
+            <div class="column">Друге речення: практика робить досконалим.</div>
+        </div>
+
+        <div class="column-layout three-column">
+            <div class="column">Навчання - це шлях до успіху.</div>
+            <div class="column">Важливо ставити цілі.</div>
+            <div class="column">Мотивація веде до дії.</div>
+        </div>
+
+        <div class="column-layout four-column">
+            <div class="column">Секрет успіху - наполегливість.</div>
+            <div class="column">Будьте відкритими до нових ідей.</div>
+            <div class="column">Кожен день - нова можливість.</div>
+            <div class="column">Не бійтеся помилок.</div>
+        </div>
+    </div>
+    
+</body>
+</html>

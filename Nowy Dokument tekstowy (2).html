@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Два стовпчики з рядками</title>
+    <style>
+        .container {
+            display: flex; /* Використання флекс-контейнера */
+            justify-content: space-around; /* Відстань між стовпчиками */
+            margin: 20px; /* Відступ контейнера */
+        }
+        .column {
+            display: flex; /* Використання флекс-контейнера для стовпчиків */
+            flex-direction: column; /* Вертикальне розташування */
+            align-items: center; /* Центрує вміст по горизонталі */
+            width: 100px; /* Ширина стовпчика */
+        }
+        .row {
+            margin: 5px 0; /* Відстань між рядками */
+            padding: 10px; /* Внутрішній відступ */
+            border: 1px solid #ccc; /* Оформлення для рядків */
+            text-align: center; /* Центрує текст */
+        }
+        .additional-rows {
+            margin-top: 20px; /* Відстань між стовпчиками та додатковими рядками */
+        }
+        .additional-container {
+            display: flex; /* Використання флекс-контейнера для додаткових стовпчиків */
+            justify-content: space-around; /* Відстань між додатковими стовпчиками */
+            margin-top: 20px; /* Відстань перед додатковими стовпчиками */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column">
+        <div class="row">Рядок 1.1</div>
+        <div class="row">Рядок 1.2</div>
+    </div>
+    <div class="column">
+        <div class="row">Рядок 2.1</div>
+        <div class="row">Рядок 2.2</div>
+    </div>
+</div>
+
+<div class="additional-rows">
+    <div class="row">Додатковий рядок 1</div>
+    <div class="row">Додатковий рядок 2</div>
+    <div class="row">Додатковий рядок 3</div>
+    <div class="row">Додатковий рядок 4</div>
+</div>
+
+<div class="additional-container">
+    <div class="column">
+        <div class="row">Стовпчик 1.1</div>
+        <div class="row">Стовпчик 1.2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 2.1</div>
+        <div class="row">Стовпчик 2.2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 3.1</div>
+        <div class="row">Стовпчик 3.2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 4.1</div>
+        <div class="row">Стовпчик 4.2</div>
+    </div>
+</div>
+
+<div class="additional-container">
+    <div class="column">
+        <div class="row">Стовпчик 5.1</div>
+        <div class="row">Стовпчик 5.2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 6.1</div>
+        <div class="row">Стовпчик 6.2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 7.1</div>
+        <div class="row">Стовпчик 7.2</div>
+    </div>
+</div>
+
+</body>
+</html>
